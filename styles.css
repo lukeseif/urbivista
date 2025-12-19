@@ -1,10 +1,8 @@
-/* ---------------- Body ---------------- */
+/* ---------------- Body & Background ---------------- */
 body {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bbdcf3' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #1f2933;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -36,13 +34,10 @@ body {
 }
 
 .nav-cta {
-  padding: 6px 12px;
-  background-color: #1E3A8A;
-  color: white;
-  border-radius: 6px;
+  font-weight: bold;
 }
 
-/* ---------------- Hero ---------------- */
+/* ---------------- Hero Section ---------------- */
 .hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -54,6 +49,7 @@ body {
   font-size: 48px;
   font-weight: 500;
   max-width: 700px;
+  line-height: 1.1;
   margin: 0 auto;
 }
 
@@ -89,31 +85,108 @@ body {
   color: #111827;
 }
 
-/* ---------------- Features ---------------- */
-.features {
+/* ---------------- Features & Solutions ---------------- */
+.features,
+.solutions {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px 120px;
+  padding: 60px 32px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  gap: 32px;
+  text-align: center;
 }
 
-.features div {
+.features div,
+.solution {
   background: #F3F4F6;
   padding: 32px;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.features h3 {
+.features h3,
+.solution h3 {
   font-size: 18px;
   font-weight: 500;
+  margin-top: 16px;
 }
 
-.features p {
+.features p,
+.solution p {
   font-size: 14px;
   color: #6B7280;
   margin-top: 12px;
+}
+
+/* Images inside features and solutions */
+.features img,
+.solution img,
+.platform-image img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px; /* soft edges */
+  margin-bottom: 16px;
+}
+
+/* ---------------- Platform Section ---------------- */
+.platform {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+.platform-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
+}
+
+.platform-text {
+  flex: 1 1 400px;
+}
+
+.platform-text ul {
+  padding-left: 20px;
+}
+
+.platform-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.platform-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* soft edges */
+}
+
+/* ---------------- CTA Section ---------------- */
+.cta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  background-color: #1E3A8A;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 24px;
 }
 
 /* ---------------- Contact Section ---------------- */
@@ -188,129 +261,26 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #16357a;
-}
-
-/* ---------------- Platform Section ---------------- */
-.platform {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 32px;
-}
-
-.platform-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.platform-text h2 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.platform-text p {
-  font-size: 16px;
-  color: #4B5563;
-  margin-bottom: 12px;
-}
-
-.platform-text ul {
-  padding-left: 18px;
-}
-
-.platform-text li {
-  font-size: 14px;
-  color: #374151;
-  margin-bottom: 6px;
-}
-
-.platform-image img {
-  width: 100%;
-  border-radius: 12px;
-  max-width: 100%;
-}
-
-/* ---------------- Solutions Section ---------------- */
-.solutions {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 32px;
-}
-
-.solutions h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.solution {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 32px;
-  margin-bottom: 32px;
-  align-items: center;
-  background: #F3F4F6;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-.solution img {
-  width: 100%;
-  border-radius: 8px;
-  max-width: 100%;
-}
-
-.solution h3 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.solution p {
-  font-size: 14px;
-  color: #6B7280;
-}
-
-/* ---------------- CTA Section ---------------- */
-.cta {
-  text-align: center;
-  padding: 60px 32px;
-  background-color: #1E3A8A;
-  color: white;
-  border-radius: 12px;
-}
-
-.cta h2 {
-  font-size: 28px;
-  margin-bottom: 16px;
-}
-
-.cta p {
-  font-size: 16px;
-  margin-bottom: 24px;
+  background-color: #16306c;
 }
 
 /* ---------------- Footer ---------------- */
 .footer {
   text-align: center;
-  padding: 2rem;
-  border-top: 1px solid #e5e7eb;
-  font-size: 0.9rem;
-  color: #64748b;
+  padding: 40px 32px;
+  background-color: #F3F4F6;
+  font-size: 14px;
+  color: #6B7280;
+  border-top: 1px solid #E5E7EB;
 }
 
 /* ---------------- Responsive ---------------- */
-@media (max-width: 900px) {
-  .platform-content,
-  .solution {
-    grid-template-columns: 1fr;
-    text-align: center;
+@media (max-width: 768px) {
+  .platform-content {
+    flex-direction: column;
   }
-
-  nav a {
-    margin-left: 1rem;
+  .features,
+  .solutions {
+    grid-template-columns: 1fr;
   }
 }
