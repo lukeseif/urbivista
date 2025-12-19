@@ -1,173 +1,146 @@
-body {
-background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bbdcf3' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Urbivista | Enterprise Site Selection & Location Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Urbivista is an enterprise SaaS platform for site selection and location intelligence. Make defensible, data-driven expansion decisions with confidence." />
+  <meta name="keywords" content="site selection software, location intelligence, enterprise SaaS, expansion analytics, trade area analysis" />
+  <meta name="author" content="Luke Seifert" />
+  <link rel="stylesheet" href="styles.css" />
 
-.nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- Open Graph -->
+  <meta property="og:title" content="Urbivista | Enterprise Site Selection SaaS" />
+  <meta property="og:description" content="Smarter site selection through defensible, data-driven analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://urbivista.io" />
 
-.logo {
-  font-size: 20px;
-  font-weight: 500;
-}
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Urbivista | Enterprise Site Selection SaaS" />
+  <meta name="twitter:description" content="Enterprise-grade site selection and location intelligence." />
+</head>
+<body>
 
-.nav a {
-  margin-left: 32px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #6B7280;
-}
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav-container">
+      <div class="logo">Urbivista</div>
+      <nav>
+        <a href="#platform">Platform</a>
+        <a href="#solutions">Solutions</a>
+        <a href="blog.html">Blog</a>
+        <!-- Future -->
+        <!-- <a href="about.html">About Us</a> -->
+        <!-- <a href="projects.html">Recent Projects</a> -->
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-.nav a:hover {
-  color: #1E3A8A;
-}
+  <!-- Hero -->
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Smarter site selection through data-driven insight</h1>
+      <p>
+        Urbivista helps enterprises evaluate locations with clarity,
+        confidence, and defensible analytics.
+      </p>
+      <div class="buttons">
+        <a href="#platform" class="primary">Explore the Platform</a>
+        <a href="#contact" class="secondary">Request a Briefing</a>
+      </div>
+    </div>
+  </main>
 
-.hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 120px 32px;
-}
+  <!-- Platform Section -->
+  <section id="platform" class="platform">
+    <div class="platform-content">
+      <div class="text">
+        <h2>The Urbivista Platform</h2>
+        <p>
+          Urbivista centralizes location intelligence, scenario modeling,
+          and reporting into a single enterprise-grade system.
+        </p>
+        <ul>
+          <li>Data-backed site scoring</li>
+          <li>Custom trade area analysis</li>
+          <li>Executive-ready dashboards</li>
+          <li>Defensible decision documentation</li>
+        </ul>
+      </div>
+      <div class="platform-image">
+        <img src="images/platform-dashboard.png" alt="Enterprise site selection dashboard">
+      </div>
+    </div>
+  </section>
 
-.hero h1 {
-  font-size: 48px;
-  font-weight: 500;
-  max-width: 700px;
-  line-height: 1.1;
-}
+  <!-- Solutions Section -->
+  <section id="solutions" class="solutions">
+    <div class="section-container">
+      <h2>Enterprise Solutions</h2>
 
-.hero p {
-  margin-top: 24px;
-  font-size: 18px;
-  color: #6B7280;
-  max-width: 600px;
-}
+      <div class="feature">
+        <img src="images/location-intelligence.png" alt="Location intelligence analysis">
+        <div>
+          <h3>Location Intelligence</h3>
+          <p>Demographics, traffic patterns, workforce, and competitive data unified into one decision layer.</p>
+        </div>
+      </div>
 
-.buttons {
-  margin-top: 40px;
-}
+      <div class="feature">
+        <img src="images/scenario-modeling.png" alt="Scenario modeling">
+        <div>
+          <h3>Scenario Modeling</h3>
+          <p>Compare sites, forecast performance, and understand risk before capital is deployed.</p>
+        </div>
+      </div>
 
-.primary {
-  background: #1E3A8A;
-  color: white;
-  padding: 14px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 14px;
-  margin-right: 12px;
-}
+      <div class="feature">
+        <img src="images/enterprise-tools.png" alt="Enterprise expansion tools">
+        <div>
+          <h3>Enterprise Expansion</h3>
+          <p>Built for multi-location growth, internal approvals, and executive accountability.</p>
+        </div>
+      </div>
 
-.secondary {
-  border: 1px solid #E5E7EB;
-  padding: 14px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #111827;
-}
+    </div>
+  </section>
 
-.features {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px 120px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-}
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Make confident expansion decisions</h2>
+      <p>See how Urbivista supports enterprise site selection with defensible, data-driven insight.</p>
+      <a href="#contact" class="primary">Request a Demo</a>
+    </div>
+  </section>
 
-.features div {
-  background: #F3F4F6;
-  padding: 32px;
-  border-radius: 12px;
-}
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Contact Urbivista</h2>
+      <p>Reach out for platform demos, investor briefings, or partnership inquiries.</p>
 
-.features h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:luke@urbivista.io">luke@urbivista.io</a></li>
+        <li>Phone: <a href="tel:+12193868562">+1 (219) 386-8562</a></li>
+        <li>Address: 9191 Broadway, Merrillville, IN 46410</li>
+      </ul>
 
-.features p {
-  font-size: 14px;
-  color: #6B7280;
-  margin-top: 12px;
-}
+      <form class="contact-form" action="https://formspree.io/f/meoyydpn" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-/* ---------------- Contact Section ---------------- */
-.contact {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 100px 32px;
-  background-color: #F9FAFB; /* soft background to differentiate section */
-  text-align: center;
-  border-radius: 12px;
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Urbivista. All rights reserved.</p>
+  </footer>
 
-.contact h2 {
-  font-size: 36px;
-  color: #1E3A8A;
-  margin-bottom: 24px;
-}
-
-.contact p {
-  font-size: 16px;
-  color: #4B5563;
-  margin-bottom: 24px;
-}
-
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 32px;
-}
-
-.contact-info li {
-  font-size: 16px;
-  color: #111827;
-  margin: 8px 0;
-}
-
-.contact-info a {
-  color: #1E3A8A;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 1px solid #E5E7EB;
-  border-radius: 6px;
-  font-size: 14px;
-  width: 100%;
-}
-
-.contact-form button {
-  padding: 14px;
-  background-color: #1E3A8A;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #1D4ED8;
-}
+</body>
+</html>
