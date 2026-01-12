@@ -30,14 +30,12 @@
 <body>
   <a id="top"></a>
 
-  <!-- Navigation -->
+  <!-- NAV -->
   <header class="nav">
-    <div class="nav-container">
-      <div class="logo">
-        <a href="#top" aria-label="Urbivista home">
-          <img src="Urbivista_Logo_FullColor.png" alt="Urbivista logo" />
-        </a>
-      </div>
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Urbivista home">
+        <img src="Urbivista_Logo_FullColor.png" alt="Urbivista logo" class="brand-logo" />
+      </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#features">Platform</a>
@@ -49,20 +47,26 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <main class="hero">
-    <div class="hero-container">
+    <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Enterprise Location Intelligence</p>
+        <p class="kicker">Enterprise Location Intelligence</p>
         <h1>Smarter site selection through data-driven insight</h1>
-        <p>
+        <p class="lead">
           Urbivista empowers enterprises to evaluate locations with clarity, confidence,
           and defensible analytics.
         </p>
 
-        <div class="buttons">
-          <a href="#features" class="primary">Explore the Platform</a>
-          <a href="#contact" class="secondary">Request a Briefing</a>
+        <div class="button-row">
+          <a href="#features" class="btn btn-primary">Explore the Platform</a>
+          <a href="#contact" class="btn btn-secondary">Request a Briefing</a>
+        </div>
+
+        <div class="trust-row" aria-label="Highlights">
+          <span class="pill">Defensible analysis</span>
+          <span class="pill">Faster approvals</span>
+          <span class="pill">Repeatable decisions</span>
         </div>
       </div>
 
@@ -77,84 +81,101 @@
     </div>
   </main>
 
-  <!-- Features -->
-  <section id="features" class="features">
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Location Intelligence</h3>
-        <p>Demographics, traffic, workforce, and competitive data unified in one platform.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Scenario Modeling</h3>
-        <p>Compare sites and forecast outcomes before capital is deployed.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Enterprise Focused</h3>
-        <p>Built for multi-location organizations and executive decision-making.</p>
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Platform Overview</h2>
+        <p>Everything you need to evaluate locations with clarity and confidence.</p>
+      </header>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Location Intelligence</h3>
+          <p>Demographics, traffic, workforce, and competitive data unified in one platform.</p>
+        </article>
+        <article class="card">
+          <h3>Scenario Modeling</h3>
+          <p>Compare sites and forecast outcomes before capital is deployed.</p>
+        </article>
+        <article class="card">
+          <h3>Enterprise Focused</h3>
+          <p>Built for multi-location organizations and executive decision-making.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Platform (USES platform-dashboard.png) -->
-  <section id="platform" class="platform">
-    <div class="platform-content">
+  <!-- PLATFORM (restructured) -->
+  <section id="platform" class="section section-alt">
+    <div class="container platform-grid">
       <div class="platform-text">
-        <h2>The Urbivista Platform</h2>
-        <p>
+        <p class="kicker">The Urbivista Platform</p>
+        <h2>One system for intelligence, modeling, and reporting</h2>
+        <p class="lead">
           Urbivista centralizes location intelligence, scenario modeling, and reporting
-          into one enterprise-grade system.
+          into one enterprise-grade system—so teams can move faster with defensible decisions.
         </p>
-        <ul>
-          <li>Data-backed site scoring</li>
-          <li>Custom trade area analysis</li>
-          <li>Executive-ready dashboards</li>
-          <li>Defensible decision documentation</li>
-        </ul>
+
+        <div class="platform-points">
+          <div class="point">
+            <h3>Site scoring & tradeoffs</h3>
+            <p>Evaluate locations using consistent criteria and clear rationale.</p>
+          </div>
+          <div class="point">
+            <h3>Trade area analysis</h3>
+            <p>Understand reach, demand, and competition with geographic context.</p>
+          </div>
+          <div class="point">
+            <h3>Executive-ready dashboards</h3>
+            <p>Deliver summaries and visuals that speed up alignment and approvals.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="platform-image">
-        <img src="platform-dashboard.png" alt="Enterprise site selection dashboard" loading="lazy" decoding="async" />
+      <div class="platform-media">
+        <div class="media-frame">
+          <img src="platform-dashboard.png" alt="Urbivista platform dashboard" loading="lazy" decoding="async" />
+        </div>
+        <p class="caption">Example dashboard view (illustrative).</p>
       </div>
     </div>
   </section>
 
-  <!-- Solutions (USES the 3 remaining PNGs) -->
-  <section id="solutions" class="solutions">
-    <div class="solutions-container">
-      <h2>Enterprise Solutions</h2>
+  <!-- SOLUTIONS (uses all remaining PNGs) -->
+  <section id="solutions" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Enterprise Solutions</h2>
+        <p>Capabilities designed to support growth decisions at portfolio scale.</p>
+      </header>
 
-      <!-- location-intelligence.png -->
       <div class="solution">
         <img src="location-intelligence.png" alt="Location intelligence analysis" loading="lazy" decoding="async" />
-        <div>
+        <div class="solution-body">
           <h3>Location Intelligence</h3>
           <p>
-            Unified demographics, traffic, workforce, and competitive data to support
-            confident expansion decisions.
+            Unified demographics, traffic, workforce, and competitive data to support confident expansion decisions.
           </p>
         </div>
       </div>
 
-      <!-- scenario-modeling.png -->
       <div class="solution">
         <img src="scenario-modeling.png" alt="Scenario modeling" loading="lazy" decoding="async" />
-        <div>
+        <div class="solution-body">
           <h3>Scenario Modeling</h3>
           <p>
-            Model multiple site scenarios, forecast performance, and understand risk
-            before deploying capital.
+            Model multiple site scenarios, forecast performance, and understand risk before deploying capital.
           </p>
         </div>
       </div>
 
-      <!-- enterprise-tools.png (this fixes your missing “Enterprise Focused” visual) -->
       <div class="solution">
         <img src="enterprise-tools.png" alt="Enterprise tools for multi-location expansion" loading="lazy" decoding="async" />
-        <div>
+        <div class="solution-body">
           <h3>Enterprise Focused</h3>
           <p>
-            Purpose-built for multi-location growth, internal approvals, and executive
-            accountability — with clear documentation behind every recommendation.
+            Purpose-built for multi-location growth, internal approvals, and executive accountability—backed by documentation.
           </p>
         </div>
       </div>
@@ -162,24 +183,25 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta">
-    <div class="cta-inner">
+  <section class="section">
+    <div class="container cta">
       <div class="cta-copy">
         <h2>Make confident expansion decisions</h2>
         <p>
-          See how Urbivista supports enterprise site selection with defensible,
-          data-driven insight.
+          See how Urbivista supports enterprise site selection with defensible, data-driven insight.
         </p>
       </div>
-      <a href="#contact" class="primary">Request a Demo</a>
+      <a href="#contact" class="btn btn-primary">Request a Demo</a>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="contact-container">
-      <h2>Contact Urbivista</h2>
-      <p>Reach out for platform demos, investor briefings, or partnership inquiries.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact">
+      <header class="section-head">
+        <h2>Contact Urbivista</h2>
+        <p>Reach out for platform demos, investor briefings, or partnership inquiries.</p>
+      </header>
 
       <ul class="contact-info">
         <li><strong>Email:</strong> <a href="mailto:luke@urbivista.io">luke@urbivista.io</a></li>
@@ -191,14 +213,17 @@
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 Urbivista. All rights reserved.</p>
+    <div class="container footer-inner">
+      <p>© 2025 Urbivista. All rights reserved.</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
   </footer>
 </body>
 </html>
