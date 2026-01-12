@@ -12,9 +12,19 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bbdcf3' fill-opacity='0.35' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+a { text-decoration: none; color: inherit; }
+
+/* Shared layout widths */
+.nav-container,
+.hero-container,
+.features-grid,
+.platform-content,
+.solutions-container,
+.cta-inner,
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
 /* =========================
@@ -24,114 +34,118 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-
-  /* Premium feel */
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #E5E7EB;
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px 32px; /* slightly taller for logo presence */
+  padding: 18px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-/* LOGO — prominent, responsive, no shrink */
-.logo {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-}
-
+/* Prominent logo */
+.logo { flex-shrink: 0; display: flex; align-items: center; }
 .logo img {
-  width: 230px;     /* 🔥 prominent on desktop */
+  width: 230px; /* prominent */
   height: auto;
   display: block;
 }
 
-/* Nav links */
-nav {
+/* Tabs (nav links) */
+.nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
-  flex-wrap: wrap; /* prevents overflow on smaller widths */
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
-nav a {
-  margin-left: 0; /* using gap instead */
-  font-size: 14px;
-  font-weight: 600;
-  color: #6B7280;
-  padding: 8px 4px;
-  border-radius: 6px;
-  transition: color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+.nav-links a {
+  font-size: 15px;       /* bigger */
+  font-weight: 700;
+  color: #475569;
+  padding: 10px 12px;    /* tab feel */
+  border-radius: 12px;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #1E3A8A;
-  background: rgba(30, 58, 138, 0.07);
+  background: rgba(30, 58, 138, 0.08);
 }
 
 .nav-cta {
-  padding: 10px 16px;
+  padding: 11px 16px;
   background: #1E3A8A;
   color: #ffffff;
-  border-radius: 10px;
-  margin-left: 0; /* using gap instead */
-  font-weight: 700;
+  border-radius: 12px;
+  font-weight: 800;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
 .nav-cta:hover {
   background: #1A2D6B;
   transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.12);
+  box-shadow: 0 12px 26px rgba(17, 24, 39, 0.14);
 }
 
 /* =========================
    Hero Section
 ========================= */
 .hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 110px 32px 90px;
+  padding: 110px 0 90px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1E3A8A;
 }
 
 .hero h1 {
+  margin: 0;
   font-size: 52px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.06;
-  max-width: 740px;
+  max-width: 760px;
 }
 
 .hero p {
-  margin-top: 22px;
+  margin-top: 18px;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #6B7280;
-  max-width: 640px;
+  max-width: 650px;
 }
 
 .buttons {
-  margin-top: 36px;
+  margin-top: 32px;
   display: flex;
-  flex-wrap: wrap;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .primary {
   background: #1E3A8A;
   color: #ffffff;
-  padding: 14px 22px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 700;
+  padding: 15px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
@@ -143,12 +157,12 @@ nav a:hover {
 
 .secondary {
   border: 1px solid #E5E7EB;
-  padding: 14px 22px;
-  border-radius: 10px;
-  font-size: 14px;
+  padding: 15px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
   color: #111827;
-  font-weight: 700;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.75);
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
@@ -158,19 +172,47 @@ nav a:hover {
   box-shadow: 0 10px 22px rgba(17, 24, 39, 0.10);
 }
 
+/* Right-side hero card (fixes the “odd” look) */
+.hero-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #E5E7EB;
+  border-radius: 18px;
+  padding: 22px 22px;
+  box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+}
+
+.hero-card h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.hero-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #374151;
+}
+
+.hero-card li {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
 /* =========================
    Features
 ========================= */
 .features {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px 110px;
+  padding: 0 0 110px;
+}
+
+.features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
 }
 
-.features div {
+.feature-card {
   background: rgba(243, 244, 246, 0.9);
   border: 1px solid #E5E7EB;
   padding: 32px;
@@ -178,14 +220,14 @@ nav a:hover {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.features div:hover {
+.feature-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(17, 24, 39, 0.10);
 }
 
 .features h3 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
 }
 
@@ -200,8 +242,6 @@ nav a:hover {
    Platform Section
 ========================= */
 .platform-content {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 90px 32px;
   display: flex;
   gap: 48px;
@@ -210,7 +250,7 @@ nav a:hover {
 
 .platform-text h2 {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.01em;
   margin: 0 0 12px;
 }
@@ -242,15 +282,13 @@ nav a:hover {
    Solutions
 ========================= */
 .solutions {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px 110px;
+  padding: 0 0 110px;
 }
 
 .solutions h2 {
   font-size: 34px;
   margin-bottom: 42px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 
@@ -279,7 +317,7 @@ nav a:hover {
 
 .solution h3 {
   margin: 0 0 8px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .solution p {
@@ -292,24 +330,30 @@ nav a:hover {
    CTA
 ========================= */
 .cta {
-  text-align: center;
-  padding: 80px 32px;
+  padding: 0 32px 110px;
+}
+
+.cta-inner {
+  text-align: left;
+  padding: 70px 38px;
   background: rgba(243, 244, 246, 0.95);
   border: 1px solid #E5E7EB;
   border-radius: 18px;
-  max-width: 1200px;
-  margin: 0 auto 110px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cta h2 {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0 0 10px;
 }
 
 .cta p {
   color: #6B7280;
-  margin: 16px auto 30px;
+  margin: 0;
   max-width: 720px;
   line-height: 1.7;
 }
@@ -318,8 +362,11 @@ nav a:hover {
    Contact
 ========================= */
 .contact {
+  padding: 0 0 110px;
+}
+
+.contact-container {
   max-width: 900px;
-  margin: 0 auto;
   padding: 90px 32px;
   background: rgba(249, 250, 251, 0.95);
   border: 1px solid #E5E7EB;
@@ -332,7 +379,7 @@ nav a:hover {
   font-size: 36px;
   color: #1E3A8A;
   margin: 0 0 18px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.01em;
 }
 
@@ -356,7 +403,7 @@ nav a:hover {
 
 .contact-info a {
   color: #1E3A8A;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .contact-form {
@@ -371,7 +418,7 @@ nav a:hover {
 .contact-form textarea {
   padding: 12px 14px;
   border: 1px solid #E5E7EB;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 14px;
   background: rgba(255,255,255,0.9);
   transition: box-shadow 0.15s ease, border-color 0.15s ease;
@@ -389,9 +436,9 @@ nav a:hover {
   background-color: #1E3A8A;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 900;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
@@ -416,6 +463,10 @@ nav a:hover {
    Responsive
 ========================= */
 @media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
   .platform-content {
     flex-direction: column;
     align-items: flex-start;
@@ -428,7 +479,12 @@ nav a:hover {
 
   .solution img {
     width: 100%;
-    max-width: 520px;
+    max-width: 560px;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -438,14 +494,19 @@ nav a:hover {
   }
 
   .logo img {
-    width: 165px; /* prominent but fits mobile */
+    width: 170px;
   }
 
   .hero {
-    padding: 90px 18px 70px;
+    padding: 90px 0 70px;
   }
 
   .hero h1 {
     font-size: 38px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 9px 10px;
   }
 }
