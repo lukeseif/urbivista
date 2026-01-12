@@ -2,36 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Urbivista | Enterprise Site Selection Intelligence</title>
+  <title>Urbivista | Enterprise Location Intelligence & Site Selection</title>
+  <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Urbivista provides enterprise-grade site selection intelligence to help organizations see more and decide better." />
+  <meta name="description" content="Urbivista is an enterprise SaaS platform for site selection, location intelligence, and expansion strategy using defensible, data-driven analytics." />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Urbivista_Logo_FullColor.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Urbivista | Enterprise Location Intelligence & Site Selection" />
+  <meta property="og:description" content="Smarter site selection through defensible, data-driven insight." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.urbivista.io" />
+  <meta property="og:image" content="https://www.urbivista.io/Urbivista_Logo_FullColor.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Urbivista | Enterprise Location Intelligence & Site Selection" />
+  <meta name="twitter:description" content="Enterprise-grade site selection and expansion intelligence." />
+  <meta name="twitter:image" content="https://www.urbivista.io/Urbivista_Logo_FullColor.png" />
 </head>
+
 <body>
+  <a id="top"></a>
 
   <!-- Navigation -->
   <header class="nav">
-    <div class="nav-inner">
+    <div class="nav-container">
       <div class="logo">
-        <!-- KEEP USING WHAT YOU HAVE (PNG or SVG) -->
-        <img src="Urbivista_Logo_FullColor.png" alt="Urbivista logo">
+        <a href="#top" aria-label="Back to top">
+          <img src="Urbivista_Logo_FullColor.png" alt="Urbivista logo" class="logo-img" />
+        </a>
       </div>
 
-      <nav class="nav-links">
-        <a href="#">Platform</a>
-        <a href="#">Solutions</a>
-        <a href="#">Company</a>
-        <a href="#">Contact</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features">Platform</a>
+        <a href="#solutions">Solutions</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <h1>Enterprise Location Intelligence</h1>
-    <p>See more. Decide better.</p>
+  <main class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Enterprise Location Intelligence</p>
+        <h1>Smarter site selection through data-driven insight</h1>
+        <p>
+          Urbivista empowers enterprises to evaluate locations with clarity, confidence,
+          and defensible analytics.
+        </p>
+        <div class="buttons">
+          <a href="#features" class="primary">Explore the Platform</a>
+          <a href="#contact" class="secondary">Request a Briefing</a>
+        </div>
+      </div>
+
+      <div class="hero-card" role="note" aria-label="Key benefits">
+        <h2>Built for executive decisions</h2>
+        <ul>
+          <li>Data-backed site scoring and tradeoffs</li>
+          <li>Scenario modeling before capital is deployed</li>
+          <li>Executive-ready reporting and documentation</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="container grid-3">
+      <div class="feature-card">
+        <h3>Location Intelligence</h3>
+        <p>Demographics, traffic, workforce, and competitive data unified in one platform.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Scenario Modeling</h3>
+        <p>Compare sites and forecast outcomes before capital is deployed.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Enterprise Focused</h3>
+        <p>Built for multi-location organizations and executive decision-making.</p>
+      </div>
+    </div>
   </section>
 
-</body>
-</html>
+  <!-- Platform -->
+  <section id="platform" class="platform">
+    <div class="container platform-content">
+      <div class="platform-text">
+        <h2>The Urbivista Platform</h2>
+        <p>
+          Urbivista centralizes location intelligence, scenario modeling, and reporting
+          into one enterprise-grade system.
+        </p>
+        <ul>
+          <li>Data-backed site scoring</li>
+          <li>Custom trade area analysis</li>
+          <li>Executive-ready dashboards</li>
+          <li>Defensible decision documentation</li>
+        </ul>
+      </div>
+
+      <div class="platform-image">
+        <img src="platform-dashboard.png" alt="Enterprise site selection dashboard" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="solutions">
+    <div class="container">
+      <h2>Enterprise Solutions</h2>
+
+      <div class="solution">
+        <img src="location-intelligence.png" alt="Location intelligence analysis" loading="lazy" decoding="async" />
+        <div>
+          <h3>Location Intelligence</h3>
+          <p>
+            Unified demographics, traffic, workforce, and competitive data to support
+            confident expansion decisions.
+          </p>
+        </div>
+      </div>
+
+      <div class="solution">
+        <img src="scenario-modeling.png" alt="Scenario modeling" loading="lazy" decoding="async" />
+        <div>
+          <h3>Scenario Modeling</h3>
+          <p>
+            Model multiple site scenarios, forecast performance, and understand risk
+            before deploying capital.
+          </p>
+        </div>
+      </div>
+
+      <div class="solution">
+        <img src="enterprise-tools.png" alt="Enterprise expansion tools" loading="lazy" decoding="async" />
+        <div>
+          <h3>Enterprise Expansion</h3>
+          <p>
+            Purpose-built for multi-location growth, internal approvals, and executive
+            accountability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <div>
+        <h2>Make confident expansion decisions</h2>
+        <p>
+          See how Urbivista supports enterprise site selection with defensible,
+          data-driven insight.
+        </p>
+      </div>
+      <a href="#contact" class=
