@@ -2,104 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Urbivista Blog | Location Intelligence & Site Selection</title>
+  <title>Urbivista Blog | Defensible Location Intelligence Insights</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Insights on enterprise site selection, location intelligence, and expansion strategy." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="Urbivista_Logo_FullColor.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Urbivista Blog" />
-  <meta property="og:description" content="Insights on enterprise site selection, location intelligence, and expansion strategy." />
+  <meta name="description" content="Articles on defensible location intelligence, site selection frameworks, assumption tracking, and expansion strategy." />
+  <link rel="canonical" href="https://www.urbivista.io/blog.html" />
+
+  <meta property="og:title" content="Urbivista Blog | Defensible Location Intelligence" />
+  <meta property="og:description" content="Frameworks and insights for executive-ready site selection decisions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.urbivista.io/blog.html" />
-  <meta property="og:image" content="https://www.urbivista.io/Urbivista_Logo_FullColor.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Urbivista_Logo_FullColor.png" />
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <header class="nav">
-    <div class="container nav-inner">
+  <header class="site-header">
+    <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Urbivista home">
-        <img src="Urbivista_Logo_FullColor.png" alt="Urbivista logo" class="brand-logo" />
+        <img class="brand-logo" src="Urbivista_Logo_FullColor.png" alt="Urbivista logo" />
       </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html#features">Platform</a>
-        <a href="index.html#platform">Product</a>
-        <a href="index.html#solutions">Solutions</a>
-        <a href="blog.html" class="nav-cta">Blog</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" role="navigation" aria-label="Primary">
+          <a href="index.html#platform">Platform</a>
+          <a href="index.html#product">Product</a>
+          <a href="index.html#solutions">Solutions</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a class="btn btn-small" href="index.html#contact">Contact</a>
+        </div>
       </nav>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <div class="container mobile-menu-inner">
+        <a href="index.html#platform" class="mobile-link">Platform</a>
+        <a href="index.html#product" class="mobile-link">Product</a>
+        <a href="index.html#solutions" class="mobile-link">Solutions</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="index.html#contact" class="btn btn-block">Contact</a>
+      </div>
     </div>
   </header>
 
-  <!-- Page Header -->
-  <main class="section">
-    <div class="container">
-      <header class="section-head">
-        <h1 style="margin:0 0 10px; font-size: 40px; font-weight: 900; letter-spacing: -0.02em;">
-          Urbivista Blog
-        </h1>
-        <p>Articles on location intelligence, site selection, and expansion strategy.</p>
-      </header>
-
-      <!-- Blog List -->
-      <div class="blog-list">
-
-        <article class="blog-card">
-          <p class="blog-meta">Dec 3, 2025 • Site Selection</p>
-          <h2 class="blog-title">
-            <a href="posts/site-selection-fails-at-assumptions.html">
-              Why Most Site Selection Decisions Fail at the Assumption Stage
-            </a>
-          </h2>
-          <p class="blog-excerpt">
-            Undocumented assumptions quietly derail site selection decisions.
-            Here’s why that happens—and how to build a defensible process.
+  <main>
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+      <div class="container blog-hero-inner">
+        <div>
+          <p class="eyebrow">URBIVISTA INSIGHTS</p>
+          <h1>Decision-grade thinking for site selection</h1>
+          <p class="hero-sub">
+            Frameworks and practical guidance on location intelligence, assumption tracking, and expansion strategy.
           </p>
-          <a class="blog-read" href="posts/site-selection-fails-at-assumptions.html">Read more →</a>
-        </article>
+        </div>
 
-        <article class="blog-card">
-          <p class="blog-meta">Jan 12, 2026 • Site Selection</p>
-          <h2 class="blog-title">
-            <a href="posts/how-to-evaluate-sites.html">
-              How to Evaluate Sites with Defensible Location Intelligence
-            </a>
-          </h2>
-          <p class="blog-excerpt">
-            A practical framework for comparing locations, documenting assumptions,
-            and making decisions executives can stand behind.
-          </p>
-          <a class="blog-read" href="posts/how-to-evaluate-sites.html">Read more →</a>
-        </article>
-
-        <article class="blog-card">
-          <p class="blog-meta">Dec 17, 2026 • Expansion Strategy</p>
-          <h2 class="blog-title">
-            <a href="posts/accurate-site-selection-saves-money.html">
-              How Accurate Site Selection Early Can Save You a Fortune Later
-            </a>
-          </h2>
-          <p class="blog-excerpt">
-            Permitting delays, infrastructure surprises, and demand shifts are expensive.
-            Here’s how a defensible site selection process prevents costly downstream issues.
-          </p>
-          <a class="blog-read" href="posts/accurate-site-selection-saves-money.html">Read more →</a>
-        </article>
-
+        <div class="blog-hero-aside">
+          <div class="card">
+            <h3>Start here</h3>
+            <p class="muted">If you only read one: learn how to evaluate sites with a defensible process.</p>
+            <a class="btn btn-soft" href="#post-2">Read the framework</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Posts -->
+    <section class="section">
+      <div class="container">
+        <div class="blog-toolbar">
+          <div class="blog-count muted">Latest posts</div>
+          <div class="pill-row" aria-label="Categories">
+            <span class="pill">Site Selection</span>
+            <span class="pill">Location Intelligence</span>
+            <span class="pill">Expansion Strategy</span>
+          </div>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Post 1 -->
+          <article class="post-card" id="post-1">
+            <div class="post-meta">Dec 3, 2025 · <span class="post-tag">Site Selection</span></div>
+            <h2 class="post-title">Why Most Site Selection Decisions Fail at the Assumption Stage</h2>
+            <p class="muted">
+              Undocumented assumptions quietly derail site selection decisions. Here’s why that happens—and how to build a defensible process.
+            </p>
+            <a class="post-link" href="#" aria-label="Read more about assumptions">Read more →</a>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="post-card featured" id="post-2">
+            <div class="post-meta">Jan 12, 2026 · <span class="post-tag">Site Selection</span></div>
+            <h2 class="post-title">How to Evaluate Sites with Defensible Location Intelligence</h2>
+            <p class="muted">
+              A practical framework for comparing locations, documenting assumptions, and making decisions executives can stand behind.
+            </p>
+            <a class="post-link" href="#" aria-label="Read more about defensible location intelligence">Read more →</a>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="post-card" id="post-3">
+            <div class="post-meta">Dec 17, 2026 · <span class="post-tag">Expansion Strategy</span></div>
+            <h2 class="post-title">How Accurate Site Selection Early Can Save You a Fortune Later</h2>
+            <p class="muted">
+              Permitting delays, infrastructure surprises, and demand shifts are expensive. Here’s how a defensible process prevents downstream issues.
+            </p>
+            <a class="post-link" href="#" aria-label="Read more about saving costs through site selection">Read more →</a>
+          </article>
+        </div>
+
+        <div class="blog-note card subtle">
+          <h3>Want a briefing tailored to your use case?</h3>
+          <p class="muted">We’ll walk through your decision workflow and show how to make approvals faster and more defensible.</p>
+          <a class="btn" href="index.html#contact">Request a briefing</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2025 Urbivista. All rights reserved.</p>
-      <a href="index.html#top" class="to-top">Back to top ↑</a>
+      <p class="muted">© <span id="year"></span> Urbivista. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html#platform">Platform</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
     </div>
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector(".nav-toggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function setMenu(open) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      mobileMenu.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setMenu(!isOpen);
+    });
+
+    mobileMenu.addEventListener("click", (e) => {
+      const link = e.target.closest("a");
+      if (link) setMenu(false);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
+  </script>
 </body>
 </html>
