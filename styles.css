@@ -1,34 +1,67 @@
+/* =========================
+   Base Styles
+========================= */
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111827;
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bbdcf3' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-  font-family: Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   Navigation
+========================= */
 .nav {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #E5E7EB;
+  z-index: 1000;
+}
+
+.nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 20px 32px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: 500;
+.logo img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
-.nav a {
+nav a {
   margin-left: 32px;
-  text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
   color: #6B7280;
 }
 
-.nav a:hover {
+nav a:hover {
   color: #1E3A8A;
 }
 
+.nav-cta {
+  padding: 8px 16px;
+  background: #1E3A8A;
+  color: #ffffff;
+  border-radius: 6px;
+  margin-left: 32px;
+}
+
+/* =========================
+   Hero Section
+========================= */
 .hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -38,8 +71,8 @@ body {
 .hero h1 {
   font-size: 48px;
   font-weight: 500;
-  max-width: 700px;
   line-height: 1.1;
+  max-width: 700px;
 }
 
 .hero p {
@@ -55,10 +88,9 @@ body {
 
 .primary {
   background: #1E3A8A;
-  color: white;
+  color: #ffffff;
   padding: 14px 24px;
   border-radius: 6px;
-  text-decoration: none;
   font-size: 14px;
   margin-right: 12px;
 }
@@ -67,11 +99,13 @@ body {
   border: 1px solid #E5E7EB;
   padding: 14px 24px;
   border-radius: 6px;
-  text-decoration: none;
   font-size: 14px;
   color: #111827;
 }
 
+/* =========================
+   Features
+========================= */
 .features {
   max-width: 1200px;
   margin: 0 auto;
@@ -98,46 +132,99 @@ body {
   margin-top: 12px;
 }
 
+/* =========================
+   Platform Section
+========================= */
 .platform-content {
-  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 32px;
+  display: flex;
   gap: 40px;
   align-items: center;
 }
 
-.platform-image img {
-  max-width: 100%;
-  border-radius: 16px; /* soft edges */
+.platform-text h2 {
+  font-size: 32px;
+  font-weight: 500;
 }
 
+.platform-text p {
+  color: #6B7280;
+  margin: 16px 0;
+}
+
+.platform-text ul {
+  padding-left: 20px;
+}
+
+.platform-text li {
+  margin-bottom: 8px;
+}
+
+.platform-image img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+/* =========================
+   Solutions
+========================= */
 .solutions {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px 120px;
 }
 
+.solutions h2 {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
 .solution {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   margin-bottom: 40px;
   align-items: center;
 }
 
 .solution img {
   width: 200px;
-  height: auto;
-  border-radius: 16px; /* soft edges */
+  border-radius: 16px;
 }
 
+.solution h3 {
+  margin: 0;
+}
+
+.solution p {
+  color: #6B7280;
+}
+
+/* =========================
+   CTA
+========================= */
 .cta {
   text-align: center;
   padding: 80px 32px;
   background-color: #F3F4F6;
   border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto 120px;
 }
 
+.cta h2 {
+  font-size: 32px;
+}
+
+.cta p {
+  color: #6B7280;
+  margin: 16px 0 32px;
+}
+
+/* =========================
+   Contact
+========================= */
 .contact {
   max-width: 900px;
   margin: 0 auto;
@@ -166,18 +253,11 @@ body {
 }
 
 .contact-info li {
-  font-size: 16px;
-  color: #111827;
   margin: 8px 0;
 }
 
 .contact-info a {
   color: #1E3A8A;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
 }
 
 .contact-form {
@@ -194,7 +274,6 @@ body {
   border: 1px solid #E5E7EB;
   border-radius: 6px;
   font-size: 14px;
-  width: 100%;
 }
 
 .contact-form button {
@@ -205,16 +284,18 @@ body {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
   background-color: #1A2D6B;
 }
 
+/* =========================
+   Footer
+========================= */
 .footer {
   text-align: center;
   padding: 32px;
-  font-size: 14px;
   color: #6B7280;
+  font-size: 14px;
 }
