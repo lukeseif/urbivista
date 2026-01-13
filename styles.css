@@ -70,9 +70,9 @@ img{ max-width: 100%; display: block; }
 
 /* DOUBLE LOGO SIZE */
 .brand-logo{
-  height: 184px;        /* doubled */
+  height: 92px;        /* doubled */
   width: auto;
-  max-width: 760px;     /* keeps the unstacked logo from becoming insane-wide */
+  max-width: 380px;     /* keeps the unstacked logo from becoming insane-wide */
   object-fit: contain;
 }
 
