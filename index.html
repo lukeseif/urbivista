@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +8,8 @@
   <meta name="description" content="Urbivista helps enterprise teams evaluate locations with defensible, audit-ready location intelligence—site scoring, scenario modeling, and executive-ready reporting." />
   <meta name="keywords" content="site selection software, location intelligence, enterprise site selection, location analytics, scenario modeling, retail expansion strategy" />
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://www.urbivista.io/" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Urbivista | Defensible Location Intelligence" />
   <meta property="og:description" content="Evaluate locations with defensible, audit-ready insight. Data-backed scoring, scenario modeling, and executive-ready reporting." />
   <meta property="og:type" content="website" />
@@ -21,7 +18,6 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="Urbivista_Logo_FullColor.png" />
 
-  <!-- JSON-LD: Organization + WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,6 +28,7 @@
     "sameAs": []
   }
   </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -131,35 +128,41 @@
 
         <div class="grid-3">
           <article class="feature-card">
-            <div class="feature-top">
-              <h3>Location Intelligence</h3>
-              <span class="tag">Data layer</span>
+            <div class="feature-content">
+              <div class="feature-top">
+                <h3>Location Intelligence</h3>
+                <span class="tag">Data layer</span>
+              </div>
+              <p class="muted">
+                Compare sites using normalized metrics—demographics, demand signals, and strategic fit.
+              </p>
             </div>
-            <p class="muted">
-              Compare sites using demographic data, demand signals, and strategic fit.
-            </p>
             <img class="feature-img" src="location-intelligence.png" alt="Location intelligence dashboard preview" />
           </article>
 
           <article class="feature-card">
-            <div class="feature-top">
-              <h3>Scenario Modeling</h3>
-              <span class="tag">Forecasting</span>
+            <div class="feature-content">
+              <div class="feature-top">
+                <h3>Scenario Modeling</h3>
+                <span class="tag">Forecasting</span>
+              </div>
+              <p class="muted">
+                Stress-test assumptions and see how tradeoffs affect performance before you commit.
+              </p>
             </div>
-            <p class="muted">
-              Stress-test assumptions and see how tradeoffs affect performance before you commit.
-            </p>
             <img class="feature-img" src="scenario-modeling.png" alt="Scenario modeling preview" />
           </article>
 
           <article class="feature-card">
-            <div class="feature-top">
-              <h3>Enterprise Reporting</h3>
-              <span class="tag">Approval-ready</span>
+            <div class="feature-content">
+              <div class="feature-top">
+                <h3>Enterprise Reporting</h3>
+                <span class="tag">Approval-ready</span>
+              </div>
+              <p class="muted">
+                Generate executive-ready outputs with clear rationale, assumptions, and audit trails.
+              </p>
             </div>
-            <p class="muted">
-              Generate executive-ready outputs with clear rationale, assumptions, and audit trails.
-            </p>
             <img class="feature-img" src="platform-dashboard.png" alt="Platform reporting dashboard preview" />
           </article>
         </div>
@@ -169,12 +172,8 @@
     <!-- Product -->
     <section id="product" class="section section-alt">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Product</h2>
-            <p class="section-sub">A workflow designed for teams that need decisions to hold up under scrutiny.</p>
-          </div>
-        </div>
+        <h2>Product</h2>
+        <p class="section-sub">A workflow designed for teams that need decisions to hold up under scrutiny.</p>
 
         <div class="grid-2">
           <div class="card">
@@ -210,7 +209,7 @@
         <h2>Solutions</h2>
         <p class="section-sub">Built for expansion teams that need repeatable, defensible decisions.</p>
 
-        <div class="grid-3">
+        <div class="grid-3 simple-cards">
           <div class="card">
             <h3>Retail & Franchise</h3>
             <p class="muted">Prioritize growth markets and validate trade areas with consistent scoring.</p>
@@ -253,10 +252,8 @@
   </footer>
 
   <script>
-    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Mobile nav toggle
     const toggle = document.querySelector(".nav-toggle");
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -271,13 +268,11 @@
       setMenu(!isOpen);
     });
 
-    // Close menu when clicking a link
     mobileMenu.addEventListener("click", (e) => {
       const link = e.target.closest("a");
       if (link) setMenu(false);
     });
 
-    // Close on escape
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") setMenu(false);
     });
