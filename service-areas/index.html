@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urbivista | Service Areas</title>
+  <meta name="description" content="Explore Urbivista service areas and region coverage." />
+  <link rel="canonical" href="https://www.urbivista.io/service-areas/" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="../index.html">
+        <img class="logo" src="../Urbivista_Logo_FullColor.png" alt="Urbivista" />
+      </a>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../platform.html">Platform</a>
+        <a class="active" href="index.html">Service Areas</a>
+        <a href="../blog.html">Insights</a>
+        <a href="../about.html">About</a>
+      </nav>
+
+      <a class="nav-cta" href="../index.html#contact">Request a briefing</a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="../index.html">Home</a>
+      <a href="../platform.html">Platform</a>
+      <a class="active" href="index.html">Service Areas</a>
+      <a href="../blog.html">Insights</a>
+      <a href="../about.html">About</a>
+      <a class="mobile-cta" href="../index.html#contact">Request a briefing</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Service Areas</h1>
+        <p class="subhead">
+          Urbivista supports evaluations nationwide. Below are examples of regional pages built for stronger local relevance.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cards">
+          <a class="card link-card" href="chicagoland-il/index.html">
+            <h2>Chicagoland Illinois</h2>
+            <p>Market evaluation and site selection support across the Chicago region.</p>
+          </a>
+
+          <a class="card link-card" href="northwest-indiana/index.html">
+            <h2>Northwest Indiana</h2>
+            <p>Site selection support across Lake, Porter, and surrounding counties.</p>
+          </a>
+
+          <a class="card link-card" href="northeast-indiana/index.html">
+            <h2>Northeast Indiana</h2>
+            <p>Market analysis support across Fort Wayne and surrounding areas.</p>
+          </a>
+        </div>
+
+        <div class="about-cta">
+          <h3>Want city specific pages for stronger local SEO</h3>
+          <p>We can create dedicated pages for your highest priority cities with unique local content and FAQs.</p>
+          <a class="button primary" href="../index.html#contact">Request a briefing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-logo" src="../Urbivista_Logo_FullColor.png" alt="Urbivista" />
+        <p class="footer-note">Enterprise location intelligence for defensible site selection</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="../index.html">Home</a>
+        <a href="../platform.html">Platform</a>
+        <a href="index.html">Service Areas</a>
+        <a href="../blog.html">Insights</a>
+        <a href="../about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector(".nav-toggle");
+      var menu = document.getElementById("mobileMenu");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", function () {
+        var isOpen = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!isOpen));
+        menu.hidden = isOpen;
+      });
+    })();
+  </script>
+</body>
+</html>
