@@ -5,16 +5,38 @@
   <title>Service Areas | Urbivista Site Selection & Location Intelligence</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="Urbivista provides defensible site selection and location intelligence across Northwest Indiana and Northeast Chicagoland, including Valparaiso, Merrillville, Michigan City, and Chicago." />
+  <meta name="description" content="Urbivista provides defensible site selection and location intelligence across Northwest Indiana, Northeast Indiana, and Chicagoland—supporting developers, operators, and enterprise teams with approval-ready analysis." />
   <link rel="canonical" href="https://www.urbivista.io/service-areas.html" />
 
   <meta property="og:title" content="Service Areas | Urbivista" />
-  <meta property="og:description" content="Defensible site selection and location intelligence across Northwest Indiana and Northeast Chicagoland." />
+  <meta property="og:description" content="Defensible site selection and location intelligence across Northwest Indiana, Northeast Indiana, and Chicagoland." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.urbivista.io/service-areas.html" />
 
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="Urbivista_Logo_FullColor.png" />
+
+  <!-- Page-level schema: service + coverage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Urbivista",
+    "url":"https://www.urbivista.io/",
+    "serviceType":[
+      "Site selection",
+      "Location intelligence",
+      "Commercial real estate site selection",
+      "Location analytics",
+      "Scenario modeling"
+    ],
+    "areaServed":[
+      {"@type":"AdministrativeArea","name":"Northwest Indiana","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"AdministrativeArea","name":"Northeast Indiana","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"AdministrativeArea","name":"Chicagoland","address":{"@type":"PostalAddress","addressRegion":"IL","addressCountry":"US"}}
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -57,17 +79,17 @@
       <div class="container blog-hero-inner">
         <div>
           <p class="eyebrow">SERVICE AREAS</p>
-          <h1>Site selection in Northwest Indiana & Northeast Chicagoland</h1>
+          <h1>Site selection across Indiana & Chicagoland</h1>
           <p class="hero-sub">
-            We support developers and operators with defensible location intelligence—site scoring, scenario modeling,
-            and approval-ready narratives.
+            Urbivista supports commercial real estate developers, franchise operators, and enterprise teams
+            with defensible location intelligence—site scoring, scenario modeling, and executive-ready narratives.
           </p>
         </div>
 
         <div class="blog-hero-aside">
           <div class="card">
             <h3>Need a quick briefing?</h3>
-            <p class="muted">We’ll walk through your use case and share a defensible evaluation approach.</p>
+            <p class="muted">We’ll review your use case and show how to make approvals faster and more defensible.</p>
             <a class="btn btn-soft" href="index.html#contact">Request a briefing</a>
           </div>
         </div>
@@ -76,44 +98,99 @@
 
     <section class="section">
       <div class="container">
-        <h2>Northwest Indiana</h2>
+        <div class="blog-toolbar">
+          <div class="blog-count muted">Regional coverage</div>
+          <div class="pill-row" aria-label="Regions">
+            <span class="pill">Northwest Indiana</span>
+            <span class="pill">Northeast Indiana</span>
+            <span class="pill">Chicagoland</span>
+          </div>
+        </div>
+
         <div class="blog-grid">
-          <article class="post-card">
-            <h3 class="post-title">Valparaiso, IN</h3>
-            <p class="muted">Defensible site selection support for operators and developers in Valparaiso.</p>
-            <a class="post-link" href="service-areas/site-selection-valparaiso-in.html">View page →</a>
+          <!-- Northwest Indiana -->
+          <article class="post-card featured" id="nwi">
+            <div class="post-meta">Region · <span class="post-tag">Northwest Indiana</span></div>
+            <h2 class="post-title">Northwest Indiana (NWI)</h2>
+            <p class="muted">
+              Site selection and location intelligence across Lake, Porter, and LaPorte County markets—supporting retail,
+              commercial development, and enterprise expansion decisions.
+            </p>
+
+            <div class="card subtle" style="margin-top:14px;">
+              <p class="muted" style="margin:0;">
+                Valparaiso · Merrillville · Michigan City · Crown Point · Hammond · Gary · Schererville · Munster · Highland ·
+                Dyer · St. John · Portage · Chesterton · Hobart · La Porte · East Chicago · Whiting
+              </p>
+            </div>
+
+            <p style="margin-top:14px;">
+              Quick links:
+              <a href="service-areas/site-selection-valparaiso-in.html">Valparaiso</a> ·
+              <a href="service-areas/site-selection-merrillville-in.html">Merrillville</a> ·
+              <a href="service-areas/site-selection-michigan-city-in.html">Michigan City</a> ·
+              <a href="service-areas/site-selection-crown-point-in.html">Crown Point</a> ·
+              <a href="service-areas/site-selection-hammond-in.html">Hammond</a>
+            </p>
           </article>
 
-          <article class="post-card">
-            <h3 class="post-title">Merrillville, IN</h3>
-            <p class="muted">Location intelligence and site evaluation for Merrillville projects.</p>
-            <a class="post-link" href="service-areas/site-selection-merrillville-in.html">View page →</a>
+          <!-- Chicagoland -->
+          <article class="post-card featured" id="chicagoland">
+            <div class="post-meta">Region · <span class="post-tag">Chicagoland</span></div>
+            <h2 class="post-title">Chicagoland (Chicago + Suburbs)</h2>
+            <p class="muted">
+              Coverage across Chicago and the surrounding suburbs for commercial real estate developers and operators—demand
+              validation, access analysis, competitive context, and approval-ready narratives.
+            </p>
+
+            <div class="card subtle" style="margin-top:14px;">
+              <p class="muted" style="margin:0;">
+                Chicago · Evanston · Skokie · Niles · Park Ridge · Des Plaines · Rosemont · Oak Park · Cicero · Berwyn · Elmhurst ·
+                Oak Brook · Lombard · Downers Grove · Hinsdale · Naperville · Wheaton · Glen Ellyn · Schaumburg · Hoffman Estates ·
+                Arlington Heights · Palatine · Mount Prospect · Elk Grove Village · Orland Park · Tinley Park · Oak Lawn · Beverly ·
+                Hyde Park
+              </p>
+            </div>
+
+            <p style="margin-top:14px;">
+              <a href="service-areas/chicagoland-il.html">View full Chicagoland coverage →</a>
+              <span class="muted"> · </span>
+              <a href="service-areas/site-selection-chicago-il.html">Chicago page →</a>
+            </p>
           </article>
 
-          <article class="post-card">
-            <h3 class="post-title">Michigan City, IN</h3>
-            <p class="muted">Trade area validation and site scoring for Michigan City.</p>
-            <a class="post-link" href="service-areas/site-selection-michigan-city-in.html">View page →</a>
+          <!-- Northeast Indiana -->
+          <article class="post-card featured" id="nei">
+            <div class="post-meta">Region · <span class="post-tag">Northeast Indiana</span></div>
+            <h2 class="post-title">Northeast Indiana (Fort Wayne Region)</h2>
+            <p class="muted">
+              Defensible site selection and location intelligence across Fort Wayne and surrounding Northeast Indiana communities—
+              supporting retail corridors, development feasibility, and expansion decisions.
+            </p>
+
+            <div class="card subtle" style="margin-top:14px;">
+              <p class="muted" style="margin:0;">
+                Fort Wayne · New Haven · Huntertown · Auburn · Huntington · Columbia City · Bluffton · Decatur · Kendallville ·
+                Angola · Garrett · Warsaw · Wabash
+              </p>
+            </div>
+
+            <p style="margin-top:14px;">
+              <a href="service-areas/northeast-indiana.html">View Northeast Indiana coverage →</a>
+            </p>
           </article>
         </div>
 
-        <div class="card subtle" style="margin-top:24px;">
-          <p class="muted" style="margin:0;">
-            Expanding coverage: Crown Point, Hammond, Gary, Schererville, Munster, Highland, Dyer, St. John, Portage,
-            Chesterton, Hobart, La Porte, East Chicago, Whiting.
+        <div class="blog-note card subtle">
+          <h3>Want city-specific pages for stronger “site selection + city” SEO?</h3>
+          <p class="muted">
+            We can create dedicated pages for your highest-priority cities (example: Valparaiso, Merrillville, Michigan City, Chicago,
+            Naperville, Schaumburg). These tend to rank better than one giant list when each page includes unique local content and FAQs.
           </p>
+          <a class="btn" href="index.html#contact">Request a briefing</a>
         </div>
 
-        <h2 style="margin-top:28px;">Northeast Chicagoland</h2>
-        <div class="blog-grid">
-          <article class="post-card">
-            <h3 class="post-title">Chicago, IL</h3>
-            <p class="muted">Defensible location intelligence for Chicago expansion and development decisions.</p>
-            <a class="post-link" href="service-areas/site-selection-chicago-il.html">View page →</a>
-          </article>
-        </div>
-
-        <p style="margin-top: 22px;">
+        <p style="margin-top: 18px;">
           <a class="muted" href="index.html">← Back to Home</a>
         </p>
       </div>
@@ -124,4 +201,37 @@
     <div class="container footer-inner">
       <p class="muted">© <span id="year"></span> Urbivista. All rights reserved.</p>
       <div class="footer-links">
-        <a href="blog
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector(".nav-toggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function setMenu(open) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      mobileMenu.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setMenu(!isOpen);
+    });
+
+    mobileMenu.addEventListener("click", (e) => {
+      const link = e.target.closest("a");
+      if (link) setMenu(false);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
+  </script>
+</body>
+</html>
