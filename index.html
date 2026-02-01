@@ -1,173 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
   <title>Urbivista | Enterprise Location Intelligence for Defensible Site Selection</title>
-  <meta name="description" content="Urbivista helps enterprise teams evaluate locations with defensible, audit ready location intelligence, scenario modeling, and reporting." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Urbivista helps enterprise teams and commercial real estate stakeholders evaluate locations with defensible, audit ready location intelligence, including site scoring, scenario modeling, and executive ready reporting."
+  />
   <link rel="canonical" href="https://www.urbivista.io/" />
+
+  <meta property="og:title" content="Urbivista | Defensible Location Intelligence" />
+  <meta
+    property="og:description"
+    content="Evaluate locations with defensible, audit ready insight. Data backed scoring, scenario modeling, and executive ready reporting."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.urbivista.io/" />
+
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Urbivista_Logo_FullColor.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Urbivista",
+    "url": "https://www.urbivista.io/",
+    "logo": "https://www.urbivista.io/Urbivista_Logo_FullColor%20-%20Unstacked-1.png",
+    "sameAs": []
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Urbivista",
+    "url": "https://www.urbivista.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.urbivista.io/blog.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Urbivista",
+    "url": "https://www.urbivista.io/",
+    "serviceType": [
+      "Site selection",
+      "Location intelligence",
+      "Commercial real estate site selection",
+      "Location analytics",
+      "Scenario modeling"
+    ],
+    "areaServed": [
+      {"@type":"City","name":"Valparaiso","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Merrillville","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Michigan City","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Crown Point","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Hammond","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Gary","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Schererville","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Munster","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Highland","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Dyer","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"St. John","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Portage","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Chesterton","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Hobart","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"La Porte","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"East Chicago","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Whiting","address":{"@type":"PostalAddress","addressRegion":"IN","addressCountry":"US"}},
+      {"@type":"City","name":"Chicago","address":{"@type":"PostalAddress","addressRegion":"IL","addressCountry":"US"}},
+      {"@type":"City","name":"Evanston","address":{"@type":"PostalAddress","addressRegion":"IL","addressCountry":"US"}},
+      {"@type":"City","name":"Skokie","address":{"@type":"PostalAddress","addressRegion":"IL","addressCountry":"US"}},
+      {"@type":"City","name":"Park Ridge","address":{"@type":"PostalAddress","addressRegion":"IL","addressCountry":"US"}},
+      {"@type":"City","name":"Des Plaines","address":{"@type":"PostalAddress","addressRegion":"IL","addressCountry":"US"}}
+    ]
+  }
+  </script>
 </head>
 
 <body>
   <header class="site-header">
-    <div class="nav">
-      <a class="brand" href="index.html">
-        <img class="logo" src="Urbivista_Logo_FullColor.png" alt="Urbivista" />
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Urbivista home">
+        <img
+          class="brand-logo"
+          src="Urbivista_Logo_FullColor - Unstacked-1.png"
+          alt="Urbivista logo"
+        />
       </a>
 
-      <nav class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="platform.html">Platform</a>
-        <a href="service-areas/index.html">Service Areas</a>
-        <a href="blog.html">Insights</a>
-        <a href="about.html">About</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" role="navigation" aria-label="Primary">
+          <a href="#platform">Platform</a>
+          <a href="#product">Product</a>
+          <a href="#solutions">Solutions</a>
+          <a href="service-areas.html">Service Areas</a>
+          <a href="blog.html">Blog</a>
+          <a class="btn btn-small" href="#contact">Contact</a>
+        </div>
       </nav>
-
-      <a class="nav-cta" href="#contact">Request a briefing</a>
-
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
 
     <div id="mobileMenu" class="mobile-menu" hidden>
-      <a class="active" href="index.html">Home</a>
-      <a href="platform.html">Platform</a>
-      <a href="service-areas/index.html">Service Areas</a>
-      <a href="blog.html">Insights</a>
-      <a href="about.html">About</a>
-      <a class="mobile-cta" href="#contact">Request a briefing</a>
+      <div class="container mobile-menu-inner">
+        <a href="#platform" class="mobile-link">Platform</a>
+        <a href="#product" class="mobile-link">Product</a>
+        <a href="#solutions" class="mobile-link">Solutions</a>
+        <a href="service-areas.html" class="mobile-link">Service Areas</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="#contact" class="btn btn-block">Contact</a>
+      </div>
     </div>
   </header>
 
-  <main class="page">
+  <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Defensible site selection built for enterprise decisions</h1>
-          <p class="subhead">
-            Urbivista helps teams evaluate markets and locations with location intelligence, scenario modeling, and enterprise reporting
-            that supports confident decisions.
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">ENTERPRISE LOCATION INTELLIGENCE</p>
+          <h1>Smarter site selection through <span class="accent">defensible</span> insight</h1>
+          <p class="hero-sub">
+            Urbivista helps enterprise teams evaluate locations with clarity, confidence, and repeatable,
+            data driven decisioning, built for executive approvals and audit ready rationale.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact">Request a briefing</a>
-            <a class="button" href="platform.html">Explore the platform</a>
+
+          <div class="cta-row">
+            <a class="btn" href="#platform">Explore the Platform</a>
+            <a class="btn btn-ghost" href="#contact">Request a Briefing</a>
+          </div>
+
+          <div class="chips" aria-label="Key outcomes">
+            <span class="chip">Defensible analysis</span>
+            <span class="chip">Faster approvals</span>
+            <span class="chip">Repeatable decisions</span>
           </div>
         </div>
 
-        <div class="hero-media">
-          <img src="platform-dashboard.png" alt="Urbivista platform dashboard" />
+        <div class="hero-right">
+          <div class="card card-raised">
+            <h3>Built for executive decisions</h3>
+            <p class="muted">
+              Make confident calls with clear tradeoffs and documentation leaders can stand behind.
+            </p>
+            <ul class="checklist">
+              <li>Data backed site scoring and tradeoffs</li>
+              <li>Scenario modeling before capital is deployed</li>
+              <li>Executive ready reporting and documentation</li>
+            </ul>
+            <a class="btn btn-soft" href="#contact">Get a demo</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section id="platform" class="section">
       <div class="container">
-        <h2>What Urbivista delivers</h2>
-        <div class="cards">
+        <h2>Platform Overview</h2>
+        <p class="section-sub">Everything you need to evaluate locations with clarity and confidence.</p>
+
+        <div class="grid-3">
+          <article class="feature-card feature-card-tight">
+            <div class="feature-content feature-content-tight">
+              <div class="feature-top feature-top-tight">
+                <h3 class="feature-title-tight">Location Intelligence</h3>
+                <span class="tag">Data layer</span>
+              </div>
+              <p class="muted">
+                Compare sites using normalized metrics, demographics, demand signals, and strategic fit.
+              </p>
+            </div>
+            <img class="feature-img" src="location-intelligence.png" alt="Location intelligence dashboard preview" />
+          </article>
+
+          <article class="feature-card feature-card-tight">
+            <div class="feature-content feature-content-tight">
+              <div class="feature-top feature-top-tight">
+                <h3 class="feature-title-tight">Scenario Modeling</h3>
+                <span class="tag">Forecasting</span>
+              </div>
+              <p class="muted">
+                Stress test assumptions and see how tradeoffs affect performance before you commit.
+              </p>
+            </div>
+            <img class="feature-img" src="scenario-modeling.png" alt="Scenario modeling preview" />
+          </article>
+
+          <article class="feature-card feature-card-tight">
+            <div class="feature-content feature-content-tight">
+              <div class="feature-top feature-top-tight">
+                <h3 class="feature-title-tight">Enterprise Reporting</h3>
+                <span class="tag">Approval ready</span>
+              </div>
+              <p class="muted">
+                Generate executive ready outputs with clear rationale, assumptions, and audit trails.
+              </p>
+            </div>
+            <img class="feature-img" src="platform-dashboard.png" alt="Platform reporting dashboard preview" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section section-alt">
+      <div class="container">
+        <h2>Product</h2>
+        <p class="section-sub">A workflow designed for teams that need decisions to hold up under scrutiny.</p>
+
+        <div class="grid-2">
           <div class="card">
-            <h3>Location Intelligence</h3>
-            <p>Evaluate trade areas, demand drivers, and competitive dynamics using structured analysis.</p>
+            <h3>Score and rank sites</h3>
+            <p class="muted">Define your model, weight what matters, and compare options with clear tradeoffs.</p>
+            <ul class="bullets">
+              <li>Custom scoring models</li>
+              <li>Weighted criteria</li>
+              <li>Comparison views</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Document assumptions</h3>
+            <p class="muted">Capture rationale as you go so leadership alignment is faster and cleaner.</p>
+            <ul class="bullets">
+              <li>Assumption tracking</li>
+              <li>Decision logs</li>
+              <li>Audit ready outputs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="screenshot-wrap">
+          <img class="screenshot" src="enterprise-tools.png" alt="Enterprise tools preview" />
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="section">
+      <div class="container">
+        <h2>Solutions</h2>
+        <p class="section-sub">Built for expansion teams that need repeatable, defensible decisions.</p>
+
+        <div class="grid-3 simple-cards">
+          <div class="card">
+            <h3>Retail and Franchise</h3>
+            <p class="muted">Prioritize growth markets and validate trade areas with consistent scoring.</p>
           </div>
           <div class="card">
-            <h3>Scenario Modeling</h3>
-            <p>Compare options using consistent assumptions and clear sensitivity analysis.</p>
+            <h3>Economic Development</h3>
+            <p class="muted">Support recruitment and redevelopment with credible, transparent analysis.</p>
           </div>
           <div class="card">
-            <h3>Enterprise Reporting</h3>
-            <p>Create audit ready outputs that teams can align on across finance, development, and leadership.</p>
+            <h3>Enterprise Real Estate</h3>
+            <p class="muted">Standardize evaluation frameworks across regions and stakeholders.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section muted">
-      <div class="container split">
-        <div>
-          <h2>Built for real world constraints</h2>
-          <p>
-            Urbivista is designed for teams that need clarity, repeatability, and defensibility.
-            The platform helps reduce noise and strengthens the story behind every location decision.
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Site Selection in Northwest Indiana and Northeast Chicagoland</h2>
+        <p class="section-sub">
+          We support defensible site selection and location intelligence across Northwest Indiana, including Valparaiso, Merrillville,
+          Michigan City, Crown Point, Hammond, Gary, Schererville, Munster, Highland, Dyer, St. John, Portage, Chesterton,
+          Hobart, La Porte, and the Northeast Chicago suburbs.
+        </p>
+
+        <div class="card subtle">
+          <p class="muted" style="margin:0;">
+            Explore regional coverage:
+            <a href="service-areas.html">Service Areas</a>
+            <span aria-hidden="true"> • </span>
+            <a href="service-areas/site-selection-valparaiso-in.html">Valparaiso</a>
+            <span aria-hidden="true"> • </span>
+            <a href="service-areas/site-selection-merrillville-in.html">Merrillville</a>
+            <span aria-hidden="true"> • </span>
+            <a href="service-areas/site-selection-michigan-city-in.html">Michigan City</a>
+            <span aria-hidden="true"> • </span>
+            <a href="service-areas/site-selection-crown-point-in.html">Crown Point</a>
+            <span aria-hidden="true"> • </span>
+            <a href="service-areas/site-selection-hammond-in.html">Hammond</a>
+            <span aria-hidden="true"> • </span>
+            <a href="service-areas/site-selection-chicago-il.html">Chicago</a>
           </p>
-          <ul class="clean-list">
-            <li>Consistent evaluation framework</li>
-            <li>Clear assumptions and inputs</li>
-            <li>Exportable outputs for stakeholders</li>
-          </ul>
-        </div>
-        <div class="split-media">
-          <img src="scenario-modeling.png" alt="Scenario modeling preview" />
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container narrow">
-        <h2>Request a briefing</h2>
-        <p class="subhead">
-          Tell us what you are evaluating and we will share how Urbivista supports your workflow.
-        </p>
-
-        <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-          <label>
-            Name
-            <input name="name" type="text" required />
-          </label>
-
-          <label>
-            Email
-            <input name="email" type="email" required />
-          </label>
-
-          <label>
-            Company
-            <input name="company" type="text" />
-          </label>
-
-          <label>
-            What are you evaluating
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-
-          <button class="button primary" type="submit">Send</button>
-        </form>
-
-        <p class="form-note">
-          Replace the Formspree link with your real form endpoint when ready.
-        </p>
+    <section id="contact" class="section cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Ready to make site selection defensible?</h2>
+          <p class="section-sub">Request a demo or briefing and we’ll walk through your use case.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="mailto:luke@urbivista.io">Email Us</a>
+          <a class="btn btn-ghost" href="blog.html">Read the Blog</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-left">
-        <img class="footer-logo" src="Urbivista_Logo_FullColor.png" alt="Urbivista" />
-        <p class="footer-note">Enterprise location intelligence for defensible site selection</p>
-      </div>
-
-      <div class="footer-right">
-        <a href="index.html">Home</a>
-        <a href="platform.html">Platform</a>
-        <a href="service-areas/index.html">Service Areas</a>
-        <a href="blog.html">Insights</a>
-        <a href="about.html">About</a>
+      <p class="muted">© <span id="year"></span> Urbivista. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="service-areas.html">Service Areas</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
 
   <script>
-    (function () {
-      var btn = document.querySelector(".nav-toggle");
-      var menu = document.getElementById("mobileMenu");
-      if (!btn || !menu) return;
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-      btn.addEventListener("click", function () {
-        var isOpen = btn.getAttribute("aria-expanded") === "true";
-        btn.setAttribute("aria-expanded", String(!isOpen));
-        menu.hidden = isOpen;
-      });
-    })();
+    const toggle = document.querySelector(".nav-toggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function setMenu(open) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      mobileMenu.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setMenu(!isOpen);
+    });
+
+    mobileMenu.addEventListener("click", (e) => {
+      const link = e.target.closest("a");
+      if (link) setMenu(false);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
   </script>
 </body>
 </html>
