@@ -597,3 +597,31 @@ h2{
   .hero h1{ font-size: 36px; }
   h2{ font-size: 30px; }
 }
+
+.feature-card-tight {
+  padding-top: 18px;
+}
+
+.feature-content-tight {
+  padding-top: 0;
+}
+
+.feature-top-tight {
+  margin-bottom: 10px;
+}
+
+.feature-title-tight {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.feature-card-tight .tag {
+  margin-top: 0;
+}
+
+.feature-card-tight .muted {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
