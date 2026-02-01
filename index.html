@@ -22,19 +22,17 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="Urbivista_Logo_FullColor.png" />
 
-  <!-- Organization schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Urbivista",
     "url": "https://www.urbivista.io/",
-    "logo": "https://www.urbivista.io/Urbivista_Logo_FullColor%20Unstacked%201.png",
+    "logo": "https://www.urbivista.io/Urbivista_Logo_FullColor%20-%20Unstacked-1.png",
     "sameAs": []
   }
   </script>
 
-  <!-- Website schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,7 +47,6 @@
   }
   </script>
 
-  <!-- Service and area served schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -92,11 +89,14 @@
 </head>
 
 <body>
-  <!-- Sticky Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Urbivista home">
-        <img class="brand-logo" src="Urbivista_Logo_FullColor Unstacked 1.png" alt="Urbivista logo" />
+        <img
+          class="brand-logo"
+          src="Urbivista_Logo_FullColor - Unstacked-1.png"
+          alt="Urbivista logo"
+        />
       </a>
 
       <nav class="nav">
@@ -115,7 +115,6 @@
       </nav>
     </div>
 
-    <!-- Mobile menu -->
     <div id="mobileMenu" class="mobile-menu" hidden>
       <div class="container mobile-menu-inner">
         <a href="#platform" class="mobile-link">Platform</a>
@@ -129,7 +128,6 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
@@ -169,17 +167,16 @@
       </div>
     </section>
 
-    <!-- Platform Overview -->
     <section id="platform" class="section">
       <div class="container">
         <h2>Platform Overview</h2>
         <p class="section-sub">Everything you need to evaluate locations with clarity and confidence.</p>
 
         <div class="grid-3">
-          <article class="feature-card">
-            <div class="feature-content">
-              <div class="feature-top">
-                <h3>Location Intelligence</h3>
+          <article class="feature-card feature-card-tight">
+            <div class="feature-content feature-content-tight">
+              <div class="feature-top feature-top-tight">
+                <h3 class="feature-title-tight">Location Intelligence</h3>
                 <span class="tag">Data layer</span>
               </div>
               <p class="muted">
@@ -189,10 +186,10 @@
             <img class="feature-img" src="location-intelligence.png" alt="Location intelligence dashboard preview" />
           </article>
 
-          <article class="feature-card">
-            <div class="feature-content">
-              <div class="feature-top">
-                <h3>Scenario Modeling</h3>
+          <article class="feature-card feature-card-tight">
+            <div class="feature-content feature-content-tight">
+              <div class="feature-top feature-top-tight">
+                <h3 class="feature-title-tight">Scenario Modeling</h3>
                 <span class="tag">Forecasting</span>
               </div>
               <p class="muted">
@@ -202,10 +199,10 @@
             <img class="feature-img" src="scenario-modeling.png" alt="Scenario modeling preview" />
           </article>
 
-          <article class="feature-card">
-            <div class="feature-content">
-              <div class="feature-top">
-                <h3>Enterprise Reporting</h3>
+          <article class="feature-card feature-card-tight">
+            <div class="feature-content feature-content-tight">
+              <div class="feature-top feature-top-tight">
+                <h3 class="feature-title-tight">Enterprise Reporting</h3>
                 <span class="tag">Approval ready</span>
               </div>
               <p class="muted">
@@ -218,7 +215,6 @@
       </div>
     </section>
 
-    <!-- Product -->
     <section id="product" class="section section-alt">
       <div class="container">
         <h2>Product</h2>
@@ -252,7 +248,6 @@
       </div>
     </section>
 
-    <!-- Solutions -->
     <section id="solutions" class="section">
       <div class="container">
         <h2>Solutions</h2>
@@ -275,7 +270,6 @@
       </div>
     </section>
 
-    <!-- SEO and Local Coverage -->
     <section class="section section-alt">
       <div class="container">
         <h2>Site Selection in Northwest Indiana and Northeast Chicagoland</h2>
@@ -306,7 +300,6 @@
       </div>
     </section>
 
-    <!-- CTA -->
     <section id="contact" class="section cta">
       <div class="container cta-inner">
         <div>
@@ -341,7 +334,7 @@
     function setMenu(open) {
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       mobileMenu.hidden = !open;
-      document.body.classList.toggle("menu_open", open);
+      document.body.classList.toggle("menu-open", open);
     }
 
     toggle.addEventListener("click", () => {
