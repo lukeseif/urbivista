@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Urbivista | About</title>
   <meta name="description" content="Learn about the Urbivista team and our approach to defensible, data driven location intelligence." />
-
   <link rel="canonical" href="https://www.urbivista.io/about.html" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -27,7 +25,7 @@
 
       <a class="nav-cta" href="index.html#contact">Request a briefing</a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -68,8 +66,8 @@
 
           <p>
             His background advising companies across real estate, hospitality, and health care industries informs Urbivista’s emphasis on
-            compliance minded strategy and long term defensibility. Jon also serves in economic development leadership roles within Northwest
-            Indiana, providing regional perspective and insight that shape Urbivista’s analytical foundation.
+            compliance minded strategy and long term defensibility. Jon also serves on the board of the Valparaiso Economic Development Corporation,
+            providing regional perspective and insight that shape Urbivista’s analytical foundation.
           </p>
         </article>
 
@@ -80,4 +78,55 @@
           <p class="profile-title">Co Founder and Head of Growth and Operations</p>
 
           <p>
-            Luke leads Urbivista’s client eng
+            Luke leads Urbivista’s client engagement, partnerships, and market expansion efforts. He brings a background in sales leadership,
+            project management, and business development, with experience guiding complex projects from concept through execution.
+          </p>
+
+          <p>
+            His professional focus centers on translating technical analysis into clear, actionable recommendations for organizations making
+            high impact location decisions. Luke works directly with clients to ensure Urbivista’s insights align with measurable business
+            outcomes and real world implementation.
+          </p>
+        </article>
+
+        <div class="about-cta">
+          <h3>Want to see Urbivista in action</h3>
+          <p>Request a briefing and we will walk through your use case and recommended next steps.</p>
+          <a class="button" href="index.html#contact">Request a briefing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-logo" src="Urbivista_Logo_FullColor.png" alt="Urbivista" />
+        <p class="footer-note">Enterprise location intelligence for defensible site selection</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="index.html">Home</a>
+        <a href="platform.html">Platform</a>
+        <a href="service-areas/index.html">Service Areas</a>
+        <a href="blog.html">Insights</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector(".nav-toggle");
+      var menu = document.getElementById("mobileMenu");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", function () {
+        var isOpen = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!isOpen));
+        menu.hidden = isOpen;
+      });
+    })();
+  </script>
+</body>
+</html>
